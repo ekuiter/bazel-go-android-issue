@@ -1,0 +1,2 @@
+#!/bin/bash
+bazel build //example --verbose_failures --crosstool_top=@androidndk//:default_crosstool --host_crosstool_top=@bazel_tools//tools/cpp:toolchain --cpu=x86 --platforms=@io_bazel_rules_go//go/toolchain:android_386_cgo
